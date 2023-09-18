@@ -4,7 +4,7 @@ import Navigation from "../components/Navigation/Navigation";
 function PostsPage() {
     return (
         <Layout>
-            <Navigation />
+
         </Layout>
     )
 }
