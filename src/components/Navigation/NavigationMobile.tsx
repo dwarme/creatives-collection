@@ -1,7 +1,5 @@
 const NavigationMobile: React.FC = () => {
-    return (
-        <div></div>
-    )
-}
+  return <div></div>;
+};
 
 export default NavigationMobile;

@@ -1,11 +1,9 @@
-import PostsPage from './pages/PostsPage';
-import './styles/theme.css';
-import './styles/main.css';
+import PostsPage from "./pages/PostsPage";
+import "./styles/theme.css";
+import "./styles/main.css";
 
 function App() {
-  return (
-    <PostsPage />
-  );
+  return <PostsPage />;
 }
 
 export default App;

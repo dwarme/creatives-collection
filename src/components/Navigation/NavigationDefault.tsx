@@ -2,9 +2,7 @@
  * @description Default Navigation
  */
 const NavigationDefault: React.FC = () => {
-    return (
-        <div></div>
-    )
-}
+  return <div></div>;
+};
 
 export default NavigationDefault;
