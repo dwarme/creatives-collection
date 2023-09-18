@@ -1,10 +1,9 @@
-import './App.css';
+import PostsPage from './pages/PostsPage';
+import './styles/theme.css';
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <PostsPage />
   );
 }
 
