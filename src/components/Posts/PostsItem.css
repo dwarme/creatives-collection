@@ -1,0 +1,32 @@
+.post-item .play-pause-button {
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.play-pause-button .svg-icon {
+    height: 11em;
+    width: 11em;
+    display: block;
+    fill: #ffffffd8;
+    transition: fill linear 250ms;
+}
+
+.play-pause-button.playing .svg-icon {
+    fill: #ffffff00;
+}
+
+@media only screen and (max-width: 734px) {
+    .play-pause-button .svg-icon {
+        height: 6em;
+        height: 6em;
+    }
+}

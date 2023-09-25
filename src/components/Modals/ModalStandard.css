@@ -1,0 +1,156 @@
+.modal-standard {
+    --modal-close-background: rgb(232,232,237);
+    --modal-close-background-hover: #ececf0;
+    --modal-close-background-active: #dfdfe4;
+    --modal-close-color: rgba(0,0,0,0.56);
+    --modal-close-color-hover: rgba(0,0,0,0.72);
+    --modal-close-button-offset-top: 16px;
+    --modal-close-button-offset-inline-start: 16px;
+    --modal-close-button-position: sticky;
+    --modal-close-border-radius: 50%;
+    --modal-close-icon-size: 36px;
+    --modal-close-icon-svg-size: 20px;
+    --modal-close-button-size: 44px;
+    --modal-overlay-border-radius: 25px;
+    --modal-overlay-background: rgb(255, 255, 255);
+    --modal-overlay-max-width: 1420px;
+    --modal-overlay-padding-bottom: 10px;
+    --modal-overlay-padding-inline: 10px;
+    --modal-overlay-padding-top: calc(var(--nav-height) + 10px);
+    --modal-scrim-fill: rgba(0,0,0,0.48);
+    --modal-scrim-blur: 20px;
+}
+
+@media only screen and (max-width: 734px) {
+    .modal-standard{
+        --modal-overlay-max-width: 375px;
+        --modal-overlay-padding-inline: 0;
+    }
+}
+
+.modal-standard.modal-open {
+    display: flex;
+    z-index: 11000;
+    opacity: 1;
+}
+
+.modal-standard {
+    overflow: auto;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(var(--modal-scrim-fill),var(--modal-scrim-fill));
+}
+
+.modal-standard.modal-scrim-blur {
+    -webkit-backdrop-filter: blur(var(--modal-scrim-blur));
+    backdrop-filter: blur(var(--modal-scrim-blur));
+}
+
+.modal-standard .modal-overlay {
+    z-index: 1;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--modal-overlay-max-width);
+    padding-inline-start: var(--modal-overlay-padding-inline);
+    padding-inline-end: var(--modal-overlay-padding-inline);
+    padding-top: var(--modal-overlay-padding-top);
+    padding-bottom: var(--modal-overlay-padding-bottom);
+    background: var(--modal-overlay-background);
+    clip-path: inset(var(--modal-overlay-padding-top) var(--modal-overlay-padding-inline) var(--modal-overlay-padding-bottom) var(--modal-overlay-padding-inline) round var(--modal-overlay-border-radius));
+    pointer-events: none;
+}
+
+.modal-standard .modal-overlay-backdrop {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.modal-standard .modal-content-wrapper {
+    order: 2;
+    visibility: visible;
+    pointer-events: auto;
+    min-height: 100px;
+}
+
+.modal-standard .modal-close-btn-wrapper {
+    display: block;
+    position: var(--modal-close-button-position);
+    order: 1;
+    align-self: flex-end;
+    z-index: 9999;
+    top: var(--modal-close-button-offset-top);
+    height: 0;
+}
+
+.modal-standard .modal-close-button {
+    cursor: pointer;
+    position: var(--modal-close-button-position);
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 9999;
+    height: var(--modal-close-button-size);
+    width: var(--modal-close-button-size);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-margin-end: var(--modal-close-button-offset-inline-start);
+    margin-inline-end: var(--modal-close-button-offset-inline-start);
+    margin-top: var(--modal-close-button-offset-top);
+    top: var(--modal-close-button-offset-top);
+}
+
+.modal-standard .modal-close-icon {
+    background: var(--modal-close-background);
+    border-radius: var(--modal-close-border-radius);
+    color: var(--modal-close-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    height: var(--modal-close-icon-size);
+    width: var(--modal-close-icon-size);
+    outline: none;
+    transition: color 100ms linear, background 100ms linear;
+    position: relative;
+    pointer-events: auto;
+}
+
+.modal-standard .modal-close-icon svg {
+    fill: currentcolor;
+    position: absolute;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+    height: var(--modal-close-icon-svg-size);
+    width: var(--modal-close-icon-svg-size);
+    pointer-events: none;
+}

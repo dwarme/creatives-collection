@@ -1,0 +1,50 @@
+.posts {
+    --first-card-width: 653px;
+    --last-card-width: 653px;
+}
+.posts .scroll-container {
+    position: relative;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 120px;
+    scrollbar-width: none;
+    width:100%;
+}
+
+.posts .item-container {
+    margin: 0;
+    position: relative;
+    display: grid;
+    grid-gap: 40px;
+    grid-auto-flow: column;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 50%;
+    padding-right: 50%;
+    list-style: none;
+    margin-inline-start: 1.1764705882em;
+}
+
+.posts .post-item {
+    scroll-snap-align: center;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 734px) {
+    .posts .scroll-container {
+        padding-top: 120px;
+        padding-bottom: 190px;
+    }
+
+    .posts .item-container {
+        grid-gap: 120px;
+    }
+
+    .posts .post-item {
+        transform: scale(1.5);
+    }
+}
+
+.posts .hero-iphone-lockup.hero-video-lockup video {
+    object-fit: cover;
+}

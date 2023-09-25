@@ -1,4 +1,74 @@
-:root {
-    --nav-desktop-width: 350px;
+html.noscroll {
+    overflow: hidden;
 }
 
+.text-colorfull-primary {
+    background: linear-gradient(0deg,#ffa745 15%,#fe869f 50%,#ef7ac8 75%,#a083ed 90%,#43aeff 110%);
+    background: -o-linear-gradient(0deg,#ffa745,#fe869f 30%,#ef7ac8 45%,#a083ed 70%,#43aeff 85%);
+    background: -moz-linear-gradient(0deg,#ffa745,#fe869f 30%,#ef7ac8 45%,#a083ed 70%,#43aeff 85%);
+    background: -webkit-linear-gradient(0deg,#ffa745,#fe869f 30%,#ef7ac8 45%,#a083ed 70%,#43aeff 85%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent!important;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.typography-section-headline {
+    font-size: 56px;
+    line-height: 1.0714285714;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+}
+
+@media only screen and (max-width: 1068px) {
+    .typography-section-headline {
+        font-size: 48px;
+        line-height: 1.0834933333;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .typography-section-headline {
+        font-size: 32px;
+        line-height: 1.125;
+        font-weight: 600;
+        letter-spacing: .004em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .typography-section-headline {
+        font-size: 28px;
+        line-height: 1.1428571429;
+        font-weight: 600;
+        letter-spacing: .007em;
+    }
+}
+
+section .section-headline {
+    margin-bottom: 80px;
+}
+
+section .section-headline.duo-tone {
+    color: #86868b;
+}
+
+section .section-headline.duo-tone strong {
+    color: #1d1d1f;
+}
+
+@media only screen and (max-width: 1068px) {
+    section .section-headline {
+        margin-bottom: 64px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    section .section-headline {
+        margin-bottom: 48px;
+    }
+}

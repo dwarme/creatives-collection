@@ -1,0 +1,145 @@
+.hero-iphone-lockup {
+    will-change: opacity, transform;
+    position: relative;
+}
+
+.hero-iphone-screen,
+.hero-video,
+.hero-iphone-screen__content {
+    display: block;
+    width: var(--p-width);
+    height: var(--p-height);
+    --p-width: 262px;
+    --p-height: 566px;
+    top: 14px;
+    left: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+.hero-iphone-screen__content {
+    z-index: 2;
+}
+
+.hero-iphone-screen__content .content-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-iphone-screen img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1068px) and (max-width: 1068px) {
+
+    .hero-iphone-screen,
+    .hero-video,
+    .hero-iphone-screen__content {
+        --p-width: 198px;
+        --p-height: 428px;
+    }
+}
+
+@media only screen and (max-width: 734px) and (max-width: 734px) {
+
+    .hero-iphone-screen,
+    .hero-video,
+    .hero-iphone-screen__content {
+        --p-width: 146px;
+        --p-height: 316px;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+
+    .hero-iphone-screen,
+    .hero-video,
+    .hero-iphone-screen__content {
+        top: 11px;
+        left: 9px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+
+    .hero-iphone-screen,
+    .hero-video,
+    .hero-iphone-screen__content {
+        top: 8px;
+        left: 7px;
+    }
+}
+
+@supports ((-webkit-mask-image:url("")) or (mask-image:url(""))) {
+
+    .hero-iphone-screen,
+    .hero-video,
+    .hero-iphone-screen__content {
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-position: center;
+        mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-image: url(http://localhost:3000/assets/hero_screen_mask__r34tcbr6brma_large_2x.png);
+        mask-image: url(http://localhost:3000/assets/hero_screen_mask__r34tcbr6brma_large_2x.png);
+        
+    }
+}
+
+
+.hero-video-lockup .hero-video {
+    display: block;
+}
+
+.hero-video {
+    z-index: 2;
+}
+
+/* Hardware */
+.hero-iphone-hardware {
+    display: block;
+    width: var(--p-width);
+    height: var(--p-height);
+    --p-width: 478px;
+    --p-height: 700px;
+    position: relative;
+    margin-right: -200px;
+    margin-left: -2px;
+    margin-bottom: -106px;
+}
+
+.hero-iphone-hardware img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1068px) and (max-width: 1068px) {
+    .hero-iphone-hardware {
+        --p-width: 362px;
+        --p-height: 530px;
+    }
+}
+
+@media only screen and (max-width: 734px) and (max-width: 734px) {
+    .hero-iphone-hardware {
+        --p-width: 268px;
+        --p-height: 392px;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .hero-iphone-hardware {
+        margin-right: -149px;
+        margin-left: -4px;
+        margin-bottom: -82px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .hero-iphone-hardware {
+        margin-right: -109px;
+        margin-left: -2px;
+        margin-bottom: -62px;
+    }
+}
