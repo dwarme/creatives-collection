@@ -12,12 +12,13 @@ const NavigationMenu: React.FC = () => {
           </li>
           <li className="app-nav-menu__item">
             <Link className="app-nav-menu__link" to={"/"}>
-              SignIn
+              About
             </Link>
           </li>
         </ul>
       </div>
       <div className="app-nav-actions">
+        {/*
         <div className="app-nav-action">
           <Link
             to={"/signin"}
@@ -27,6 +28,7 @@ const NavigationMenu: React.FC = () => {
             Subscribe
           </Link>
         </div>
+        */}
         <div className="app-nav-action app-nav-action-menucta">
           <label htmlFor="app-nav-menustate" className="app-nav-menucta">
             <svg
