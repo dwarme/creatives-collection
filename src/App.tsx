@@ -6,8 +6,8 @@ import React, { Suspense } from "react";
 import SuspenseFallbackPages from "./components/FallbaksSuspense/FallbackSuspensePages";
 
 const Pages = {
-  Account: React.lazy(
-    () => import(/* webpackChunkName: "account" */ "./pages/AccountPage")
+  About: React.lazy(
+    () => import(/* webpackChunkName: "account" */ "./pages/AboutPage")
   ),
   Posts: React.lazy(
     () => import(/* webpackChunkName: "posts" */ "./pages/PostsPage")
@@ -22,7 +22,7 @@ function App() {
           <Suspense fallback={<SuspenseFallbackPages />}>
             <Routes>
               <Route path="/" element={<Pages.Posts />} />
-              <Route path="/account" element={<Pages.Account />} />
+              <Route path="/account" element={<Pages.About />} />
             </Routes>
           </Suspense>
         </BrowserRouter>
