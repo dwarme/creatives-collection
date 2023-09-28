@@ -22,7 +22,7 @@ function App() {
           <Suspense fallback={<SuspenseFallbackPages />}>
             <Routes>
               <Route path="/" element={<Pages.Posts />} />
-              <Route path="/account" element={<Pages.About />} />
+              <Route path="/about" element={<Pages.About />} />
             </Routes>
           </Suspense>
         </BrowserRouter>
