@@ -7,7 +7,7 @@ const NavigationMenu: React.FC = () => {
         <ul className="app-nav-menu__items">
           <li className="app-nav-menu__item">
             <Link className="app-nav-menu__link" to={"/"}>
-              Creatives
+              Check
             </Link>
           </li>
           <li className="app-nav-menu__item">

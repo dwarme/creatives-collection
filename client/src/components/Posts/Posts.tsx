@@ -41,7 +41,7 @@ const Posts: React.FC = () => {
       thumbnailSrc:
         "https://instagram.fmxp6-1.fna.fbcdn.net/v/t51.2885-15/378091105_2237380243131898_4645459958875486417_n.jpg?stp=dst-jpg_e15&_nc_ht=instagram.fmxp6-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=KVdKLl4j7YUAX8IDfXH&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzE5MDQwMDk5MTc0MDkyMDc5Mw%3D%3D.2-ccb7-5&oh=00_AfDA4i7QFuWMy3gr0xeakhfNBP7eAdkkOk7C49FUqcDjwA&oe=650E5127&_nc_sid=ee9879",
       videoUrl:
-        "https://scontent.cdninstagram.com/v/t66.30100-16/10000000_861618841966179_3877056293101060134_n.mp4?_nc_cat=1&ccb=1-7&_nc_sid=9c5c06&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmMyLUMzLmRhc2hfdnA5ZXZlXzEwODBwX3YxIn0%3D&_nc_ohc=WpA69sErdsgAX_tHI43&_nc_ht=scontent.cdninstagram.com&oh=00_AfCH_PbuTlLqs9vzGp_hZk8hmsOW_buffaYatEw5_xDRSA&oe=6513CCA5&bytestart=0&byteend=7175141",
+        "https://scontent.cdninstagram.com/o1/v/t16/f1/m82/D14A2A00FC43F10B4226D6CB4BD033A7_video_dashinit.mp4?efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uY2xpcHMuYzIuNzIwLmJhc2VsaW5lIn0&_nc_ht=instagram.ffco3-1.fna.fbcdn.net&_nc_cat=110&vs=783689986830177_359756425&_nc_vs=HBksFQIYT2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfcHJvZC9EMTRBMkEwMEZDNDNGMTBCNDIyNkQ2Q0I0QkQwMzNBN192aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dIT29DaGE3ODB2b1pmMENBTzRhcEx2b2JQUklicV9FQUFBRhUCAsgBACgAGAAbABUAACbA9eSZ1s7yPxUCKAJDMywXQEVAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HAA%3D%3D&ccb=9-4&oh=00_AYC_lNgeFQrW3POa39TFt8PvIxlAN3uPRROLDAzoCro2qg&oe=6653ECE0&_nc_sid=cf751b",
       photoUrl: null,
       seenByViewer: false,
       ownerId: "5821462185",
@@ -60,33 +60,6 @@ const Posts: React.FC = () => {
       <div className="row justify-content-center posts">
         <div ref={refScrollContainer} className="scroll-container">
           <ul className="item-container">
-            <ErrorBoundary fallback={<FallbackErrorBoundaryPost />}>
-              <PostsItem
-                post={posts[0]}
-                onOpenPostModal={() => handleOpenPostModal(0)}
-              />
-            </ErrorBoundary>
-            <ErrorBoundary fallback={<FallbackErrorBoundaryPost />}>
-              <PostsItem
-                post={posts[0]}
-                onOpenPostModal={() => handleOpenPostModal(0)}
-              />
-            </ErrorBoundary>
-
-            <ErrorBoundary fallback={<FallbackErrorBoundaryPost />}>
-              <PostsItem
-                post={posts[0]}
-                onOpenPostModal={() => handleOpenPostModal(0)}
-              />
-            </ErrorBoundary>
-
-            <ErrorBoundary fallback={<FallbackErrorBoundaryPost />}>
-              <PostsItem
-                post={posts[0]}
-                onOpenPostModal={() => handleOpenPostModal(0)}
-              />
-            </ErrorBoundary>
-
             <ErrorBoundary fallback={<FallbackErrorBoundaryPost />}>
               <PostsItem
                 post={posts[0]}

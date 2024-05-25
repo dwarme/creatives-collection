@@ -10,8 +10,8 @@ function PostsPage() {
         <section className="section">
           <div className="section-content">
             <h2 className="typography-section-headline section-headline duo-tone">
-              <strong className="text-colorfull-primary">
-                Top 5 Collections.
+              <strong className="text-colorfull-primaryX">
+                Meta Ads Policy Checker.
               </strong>{" "}
               Fueling Creativity and Inspiration.
             </h2>

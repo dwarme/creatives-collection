@@ -6,7 +6,7 @@ const NavigationMenuMobileContent: React.FC = () => {
           <ul className="app-mobilenav-list">
             <li className="app-mobilenav-list-item-elevated">
               <a href="/" className="app-mobilenav-link">
-                Creatives
+                Check
               </a>
             </li>
             <li className="app-mobilenav-list-item-elevated">
